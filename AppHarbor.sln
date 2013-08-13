@@ -1,6 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetTiers", "NetTiers", "{F3A10C8D-3227-449F-A2CB-014DE2D7F415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowServices", "WindowServices", "{F4B03C1C-0745-41A2-B79E-1416F733CCC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLM.Construction.Entities", "RLM.Construction.Entities\RLM.Construction.Entities.csproj", "{20E43088-4618-4F4A-B8AD-FC31B50D94CD}"
 EndProject
@@ -22,9 +24,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLM.Construction.WebService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLM.Construction.ServiceHelpers", "RLM.Construction.ServiceHelpers\RLM.Construction.ServiceHelpers.csproj", "{FDB1D83C-A0C6-4C7F-9AC5-2CC6FF184A26}"
 EndProject
-Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "RLM.Construction.Databases", "RLM.Construction.Databases\RLM.Construction.Databases.dbproj", "{67CBC824-A49E-4E9B-A947-360F3DFE65C3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowServices", "WindowServices", "{F4B03C1C-0745-41A2-B79E-1416F733CCC3}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RLM.Construction.Databases", "RLM.Construction.Databases\RLM.Construction.Databases.sqlproj", "{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,12 +72,12 @@ Global
 		{FDB1D83C-A0C6-4C7F-9AC5-2CC6FF184A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDB1D83C-A0C6-4C7F-9AC5-2CC6FF184A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB1D83C-A0C6-4C7F-9AC5-2CC6FF184A26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +93,6 @@ Global
 		{3AD31B07-8484-4945-A8CB-E928F1EEA950} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
 		{A32DBBAD-6A59-45A4-BE83-D6B0FD4BB451} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
 		{FDB1D83C-A0C6-4C7F-9AC5-2CC6FF184A26} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
-		{67CBC824-A49E-4E9B-A947-360F3DFE65C3} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
+		{2BDFE4FD-BBF1-446A-9C5F-C130FEC2E37C} = {F3A10C8D-3227-449F-A2CB-014DE2D7F415}
 	EndGlobalSection
 EndGlobal

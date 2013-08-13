@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="RLM.Construction.WebApplication.MasterPage.Page" %>
+<%@ Register src="../UserControl/PageResourceReference.ascx" tagname="PageResourceReference" tagprefix="uc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <uc1:PageResourceReference ID="PageResourceReference1" runat="server" />
+    <asp:ContentPlaceHolder ID="Heading" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body oninit="this.className='PageViewLoading';" onload="this.className='';">
+    <script type="text/javascript">
+        function resizeFrame(id) {
+            $('#'+ id).iframeAutoHeight();
+        }
+        function resizeAllFrameBy(selector) {
+            $(selector).iframeAutoHeight();
+        }
+
+        $(document).ready(function () {
+            /* set fromat of all control */
+            UtilityHelper.setDefaultFormat();
+            //alert('test');
+        });
+    </script>
+    <form id="form1" runat="server" class="NoBackGround">
+    <div id="messageBox" class="MessageBox" runat="server" visible="false">
+        <div id="messageIcon" runat="server" class="Message"></div>
+    </div>
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server" />
+    <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="false" Skin="Windows7">
+    </telerik:RadSkinManager>
+    <div id='pageContentWrapper'>
+        <asp:Literal ID='ltrPage' runat="server"></asp:Literal>
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        Chức năng đang được cài đặt
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    
+</body>
+</html>

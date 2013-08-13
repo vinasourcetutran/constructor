@@ -24,3 +24,11 @@ D:\PROJECTs\My\Construction\Src\RLM.Core\obj\Debug\GenerateResource-ResGen.read.
 D:\PROJECTs\My\Construction\Src\RLM.Core\obj\Debug\GenerateResource-ResGen.write.1.tlog
 D:\PROJECTs\My\Construction\Src\RLM.Core\obj\Debug\RLM.Core.dll
 D:\PROJECTs\My\Construction\Src\RLM.Core\obj\Debug\RLM.Core.pdb
+D:\projects\construction\RLM.Core\bin\Debug\RLM.Core.dll
+D:\projects\construction\RLM.Core\bin\Debug\RLM.Core.pdb
+D:\projects\construction\RLM.Core\bin\Debug\log4net.dll
+D:\projects\construction\RLM.Core\obj\Debug\RLM.Core.csprojResolveAssemblyReference.cache
+D:\projects\construction\RLM.Core\obj\Debug\RLM.Core.Resource.Rex.Pager.resources
+D:\projects\construction\RLM.Core\obj\Debug\RLM.Core.csproj.GenerateResource.Cache
+D:\projects\construction\RLM.Core\obj\Debug\RLM.Core.dll
+D:\projects\construction\RLM.Core\obj\Debug\RLM.Core.pdb

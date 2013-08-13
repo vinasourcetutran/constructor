@@ -22,3 +22,11 @@ D:\PROJECTs\My\Construction\Src\RLM.Configuration\bin\Debug\RLM.Core.pdb
 D:\PROJECTs\My\Construction\Src\RLM.Configuration\obj\Debug\ResolveAssemblyReference.cache
 D:\PROJECTs\My\Construction\Src\RLM.Configuration\obj\Debug\RLM.Configuration.dll
 D:\PROJECTs\My\Construction\Src\RLM.Configuration\obj\Debug\RLM.Configuration.pdb
+D:\projects\construction\RLM.Configuration\bin\Debug\RLM.Configuration.dll
+D:\projects\construction\RLM.Configuration\bin\Debug\RLM.Configuration.pdb
+D:\projects\construction\RLM.Configuration\bin\Debug\RLM.Core.dll
+D:\projects\construction\RLM.Configuration\bin\Debug\log4net.dll
+D:\projects\construction\RLM.Configuration\bin\Debug\RLM.Core.pdb
+D:\projects\construction\RLM.Configuration\obj\Debug\RLM.Configuration.csprojResolveAssemblyReference.cache
+D:\projects\construction\RLM.Configuration\obj\Debug\RLM.Configuration.dll
+D:\projects\construction\RLM.Configuration\obj\Debug\RLM.Configuration.pdb

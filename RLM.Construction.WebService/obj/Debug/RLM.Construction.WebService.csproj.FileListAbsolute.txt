@@ -13,3 +13,8 @@ D:\PROJECTs\My\Construction\Src\RLM.Construction.WebService\bin\RLM.Construction
 D:\PROJECTs\My\Construction\Src\RLM.Construction.WebService\obj\Debug\ResolveAssemblyReference.cache
 D:\PROJECTs\My\Construction\Src\RLM.Construction.WebService\obj\Debug\RLM.Construction.WebService.dll
 D:\PROJECTs\My\Construction\Src\RLM.Construction.WebService\obj\Debug\RLM.Construction.WebService.pdb
+D:\projects\construction\RLM.Construction.WebService\bin\RLM.Construction.WebService.dll
+D:\projects\construction\RLM.Construction.WebService\bin\RLM.Construction.WebService.pdb
+D:\projects\construction\RLM.Construction.WebService\obj\Debug\RLM.Construction.WebService.csprojResolveAssemblyReference.cache
+D:\projects\construction\RLM.Construction.WebService\obj\Debug\RLM.Construction.WebService.dll
+D:\projects\construction\RLM.Construction.WebService\obj\Debug\RLM.Construction.WebService.pdb

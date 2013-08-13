@@ -40,3 +40,17 @@ D:\PROJECTs\My\Construction\Src\RLM.Construction.Entities\bin\Debug\RLM.Core.pdb
 D:\PROJECTs\My\Construction\Src\RLM.Construction.Entities\obj\Debug\ResolveAssemblyReference.cache
 D:\PROJECTs\My\Construction\Src\RLM.Construction.Entities\obj\Debug\RLM.Construction.Entities.dll
 D:\PROJECTs\My\Construction\Src\RLM.Construction.Entities\obj\Debug\RLM.Construction.Entities.pdb
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\RLM.Construction.Entities.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\RLM.Construction.Entities.pdb
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\RLM.Construction.Entities.xml
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\RLM.Core.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\log4net.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+D:\projects\construction\RLM.Construction.Entities\bin\Debug\RLM.Core.pdb
+D:\projects\construction\RLM.Construction.Entities\obj\Debug\RLM.Construction.Entities.csprojResolveAssemblyReference.cache
+D:\projects\construction\RLM.Construction.Entities\obj\Debug\RLM.Construction.Entities.dll
+D:\projects\construction\RLM.Construction.Entities\obj\Debug\RLM.Construction.Entities.pdb

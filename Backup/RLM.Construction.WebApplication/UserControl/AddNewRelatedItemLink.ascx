@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AddNewRelatedItemLink.ascx.cs" Inherits="RLM.Construction.WebApplication.UserControl.AddNewRelatedItemLink" %>
+<a ID='lnkAddNew'  runat="server"  class="AddItem Padding15 CenterBackground Margin3" href="#">&nbsp;&nbsp;</a>

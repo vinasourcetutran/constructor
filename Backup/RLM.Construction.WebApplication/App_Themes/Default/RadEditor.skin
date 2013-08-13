@@ -1,0 +1,242 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<telerik:RadAjaxManager runat="server">
+        <ClientEvents OnRequestStart="AjaxManagerHelper.onRequestStart" />
+        <AjaxSettings>
+        </AjaxSettings>
+    </telerik:RadAjaxManager>
+<telerik:RadGrid AutoGenerateColumns="false"   AllowFilteringByColumn="True" AllowSorting="True" 
+        ShowGroupPanel="true" ShowFooter="True" runat="server" ShowHeader="true" >
+        <PagerStyle Mode="NextPrevAndNumeric" AlwaysVisible="true" Visible="true" />
+        <GroupingSettings CaseSensitive="false" />
+        <MasterTableView CommandItemDisplay="Bottom"  ShowHeadersWhenNoRecords="true">
+            <CommandItemSettings ShowAddNewRecordButton="false" ShowExportToExcelButton="true" ShowExportToWordButton="true"/>
+        </MasterTableView>
+        <PagerStyle Mode="NextPrevAndNumeric" AlwaysVisible="true" Visible="true" />
+        <ClientSettings AllowGroupExpandCollapse="True" ReorderColumnsOnClient="True" AllowDragToGroup="True"
+                AllowColumnsReorder="True" >
+             <Scrolling AllowScroll="True" EnableVirtualScrollPaging="True" UseStaticHeaders="True"
+                SaveScrollPosition="True"></Scrolling>
+        </ClientSettings>
+        <ExportSettings FileName="He_Thong_Quan_Ly_Du_An_Cong_Trinh" ExportOnlyData="true" IgnorePaging="true" OpenInNewWindow="true">
+            <Pdf AllowAdd="false" AllowCopy="true" AllowModify="false"  AllowPrinting="true"/>
+            <Csv FileExtension="csv" />
+            <Excel FileExtension="xls" />
+        </ExportSettings>
+        <GroupingSettings ShowUnGroupButton="true" />
+    </telerik:RadGrid>
+
+<telerik:radeditor runat="server" SkinId="MinimalSetOfTools">
+   <Tools>
+    <telerik:EditorToolGroup >
+        <telerik:EditorTool Name="Bold" />
+        <telerik:EditorTool Name="Italic" />
+    </telerik:EditorToolGroup>
+   </Tools>	   
+</telerik:radeditor>
+<%--BASIC SET OF TOOLS--%>
+<telerik:radeditor runat="server" SkinId="BasicSetOfTools">
+    <Tools>    
+    <telerik:EditorToolGroup Tag="MainToolbar">
+        <telerik:EditorTool name="AjaxSpellCheck" />
+		<telerik:EditorTool name="FindAndReplace" />
+		<telerik:EditorSeparator Visible="true" />
+		<telerik:EditorTool name="Undo" />
+		<telerik:EditorTool name="Redo" />
+		<telerik:EditorSeparator Visible="true" />
+		<telerik:EditorTool name="Cut" />
+		<telerik:EditorTool name="Copy" />
+		<telerik:EditorTool name="Paste" shortcut="CTRL+!"/>
+	</telerik:EditorToolGroup>
+	<telerik:EditorToolGroup Tag="Formatting">
+		<telerik:EditorTool name="Bold" />
+		<telerik:EditorTool name="Italic" />
+		<telerik:EditorTool name="Underline" />
+		<telerik:EditorSeparator Visible="true" />
+		<telerik:EditorTool name="ForeColor" />
+		<telerik:EditorTool name="BackColor"/>
+		<telerik:EditorSeparator Visible="true" />
+		<telerik:EditorTool name="FontName"/>
+		<telerik:EditorTool name="RealFontSize"/>
+	</telerik:EditorToolGroup>
+	</Tools>
+</telerik:radeditor>
+<%--DEFAULT SET OF TOOLS--%>
+<telerik:radeditor runat="server" SkinId="DefaultSetOfTools">
+   <CssFiles>
+        <telerik:EditorCssFile Value="~/App_Themes/Default/CustomStyles.css" />
+   </CssFiles>
+    <ImageManager 
+   ViewPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   UploadPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   DeletePaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations"   
+    />
+    <FlashManager 
+   ViewPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   UploadPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   DeletePaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations"   
+    />
+    <MediaManager 
+   ViewPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   UploadPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   DeletePaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations"   
+    />
+    <DocumentManager 
+   ViewPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   UploadPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   DeletePaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations"
+    />
+    <TemplateManager 
+   ViewPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   UploadPaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations" 
+   DeletePaths="~/Editor/Img/UserDir/Marketing,~/Editor/Img/UserDir/PublicRelations"
+   SearchPatterns="*.html,*.html"
+    /> 
+  
+    <Content>
+        <h1 style="background-color: #689a05; text-align: center;color: #ffffff;"><span style="font-size: 22px; font-family: segoe ui;">RadEditor for ASP.NET AJAX<br />
+</span></h1>
+<p style="text-align: justify;"><span style="font-size: 19px; color: #4f6128;"><strong>RadEditor</strong></span><span style="color: #4f6128;"> </span>is not simply an HTML<a href="#HTMLDescription"><sup>1</sup></a> Editor. It is what Microsoft chose to use in <strong>MSDN</strong>, <strong>CodePlex</strong>, <strong>TechNet</strong>, <strong>MCMS</strong> and even as an alternative to the default editor in <a href="http://www.telerik.com/products/aspnet-ajax/sharepoint.aspx">SharePoint</a>. Whether you need a mere Textbox with Google-like spellchecker, or a Word-like content authoring environment, the result is the same: clean <strong>XHTML</strong> output, fast rendering, widest cross-browser support, and <a href="http://www.telerik.com/products/aspnet-ajax/editor.aspx">tons of features</a>: <br />
+<br />
+<img src="../../Img/editor.jpg" alt="product logo" style="margin-top: 25px; float: left; margin-right: 15px;" /></p>
+<ul>
+    <li>
+    <em>Out-of-the-box XHTML-enabled Output...</em>
+    </li>
+    <li>
+    <em>Unmatched Loading Speed and Performance</em>
+    </li>
+    <li>
+    <em>Microsoft Word-like Spell-checking</em>
+    </li>
+    <li>
+    <em>Seven Ways for Pasting from Word</em>
+    </li>
+    <li>
+    <em>Multilevel Undo/Redo with Action Trails</em>
+    </li>
+    <li>
+    <em>Extended Functionality Through Integrated Controls</em>
+    </li>
+</ul>
+<table width="500" style="margin: 0pt auto;">
+    <thead>
+        <tr>
+            <th style="background-color: #ebf1dd;">Browser/OS</th>
+            <th style="background-color: #ebf1dd;">Windows</th>
+            <th style="background-color: #ebf1dd;">Mac OS</th>
+            <th style="background-color: #ebf1dd;">Linux</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center" style="text-align: left; vertical-align: middle;"><img src="../../Img/BrowserIcons/ie.gif" alt="ie" style="float: left;" />&nbsp; Internet Explorer</td>
+            <td valign="top" style="background-color: #f2f2f2;">6.0+</td>
+            <td valign="top" style="background-color: #e5e0ec;">- </td>
+            <td valign="top" style="background-color: #dbeef3;">- </td>
+        </tr>
+        <tr>
+            <td><img src="../../Img/BrowserIcons/ff.gif" alt="ff" style="float: left;" />&nbsp; Firefox</td>
+            <td style="background-color: #f2f2f2;">1.5+</td>
+            <td style="background-color: #e5e0ec;">1.5+</td>
+            <td style="background-color: #dbeef3;">1.5+</td>
+        </tr>
+        <tr>
+            <td><img src="../../Img/BrowserIcons/chrome.gif" alt="chrome" style="float: left;" />&nbsp; Google Chrome</td>
+            <td style="background-color: #f2f2f2;">0.2+</td>
+            <td style="background-color: #e5e0ec;">5.0+</td>
+            <td style="background-color: #dbeef3;">5.0+</td>
+        </tr>
+        <tr>
+            <td><img src="../../Img/BrowserIcons/opera.gif" alt="opera" style="float: left;" />&nbsp; Opera</td>
+            <td style="background-color: #f2f2f2;">9.0+</td>
+            <td style="background-color: #e5e0ec;">9.0+</td>
+            <td style="background-color: #dbeef3;">-</td>
+        </tr>
+        <tr>
+            <td><img src="../../Img/BrowserIcons/safari.gif" alt="safari" style="float: left;" />&nbsp; Safari</td>
+            <td style="background-color: #f2f2f2;">3.0+</td>
+            <td style="background-color: #e5e0ec;">3.0+</td>
+            <td style="background-color: #dbeef3;">-</td>
+        </tr>
+        <tr>
+            <td><img src="../../Img/BrowserIcons/netscape.gif" alt="chrome" style="float: left;" />&nbsp; Netscape</td>
+            <td style="background-color: #f2f2f2;">9.0+</td>
+            <td style="background-color: #e5e0ec;">9.0+</td>
+            <td style="background-color: #dbeef3;">9.0+</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<hr />
+<sup><sup><a id="HTMLDescription">1.</a></sup>The computer language used to create world-wide-web pages which are read by browsers.</sup>
+    </Content> 
+   <Links>
+        <telerik:EditorLink Name="Telerik" href="http://www.telerik.com">
+           <telerik:EditorLink Name="Products" href="http://www.telerik.com/products">
+               <telerik:EditorLink Name="RadEditor" href="http://www.telerik.com/radeditor">
+                   <telerik:EditorLink Name="Accessible RadEditor" href="http://demos.telerik.com/aspnet-ajax/editor/examples/accessibleeditor/defaultcs.aspx" />
+                   <telerik:EditorLink Name="Rad Editor for MOSS" href="http://www.telerik.com/products/aspnet-ajax/sharepoint.aspx" />
+               </telerik:EditorLink>
+            </telerik:EditorLink>
+            <telerik:EditorLink name="Purchase" href="http://www.telerik.com/purchase" />
+            <telerik:EditorLink name="Support" href="http://www.telerik.com/support" />
+            <telerik:EditorLink name="Community" href="http://www.telerik.com/community" />
+            <telerik:EditorLink name="Company" href="http://www.telerik.com/company" />
+            <telerik:EditorLink name="Account" href="https://www.telerik.com/login.aspx" />
+        </telerik:EditorLink>
+        <telerik:EditorLink name="Microsoft">
+            <telerik:EditorLink name="Main Site" href="http://www.microsoft.com" />
+            <telerik:EditorLink name="MSDN Online" href="http://msdn.microsoft.com" />
+            <telerik:EditorLink name="Windows Update" href="http://windowsupdate.microsoft.com" />
+        </telerik:EditorLink>
+        <telerik:EditorLink name="Search Engines">
+            <telerik:EditorLink name="Google" href="http://www.google.com" />
+            <telerik:EditorLink name="Yahoo" href="http://www.yahoo.com" />
+            <telerik:EditorLink name="Bing" href="http://www.bing.com" />
+        </telerik:EditorLink>
+    </Links> 
+        <Snippets>
+            <telerik:EditorSnippet Name="Order Confirmation">        
+					<div style="width:300px;border:2px outset #D8D2BD;padding:34px;font-family:Arial, Verdana; font-size:11px;background-color:#F1EFE6;">
+					Dear ____________________,<br />
+					Thank you for inquiring about ____________. Your request will be processed in 48 hours and shipped at the address you have provided. 
+					<br /><br />
+						<b>Please, contact us if you have any problems.</b>
+					</div>		
+            </telerik:EditorSnippet>
+            <telerik:EditorSnippet Name="Email Signature">
+					<div style="margin-top:30px;width:80%;border-top:1px dotted gray;padding-top:4px;font-family:Arial, Verdana; font-size:11px;">
+					<b>John Wigham</b><br />
+					Senior Web Developer<br />
+						<a href="#">john@mysite.com</a>
+						<br />
+							<br />
+								<i>Disclaimer: The contents of this e-mail are privileged and confidential and intended for the addressees at the specified e-mail addresses only.</i>
+					</div>
+            </telerik:EditorSnippet>				
+            <telerik:EditorSnippet Name="Problem Report Feedback">
+					<div style="width:300px;border:2px outset #D8D2BD;padding:34px;font-family:Arial, Verdana; font-size:11px;background-color:#F1EFE6;">
+					Hi ____________________,<br />
+					Thank you for reporting this issue. We have verified the problem and it is logged in our system. We will notify you once we have a solution. 
+					<br /><br />
+						<b>Please, contact us if you have any problems.</b>
+					</div>			
+            </telerik:EditorSnippet>
+        </Snippets>    
+</telerik:radeditor>
+<asp:textbox height="20" runat='server' />
