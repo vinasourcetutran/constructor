@@ -99,10 +99,11 @@ D:\PROJECTs\My\Construction\Src\RLM.Construction.Web\bin\Debug\RLM.Configuration
 D:\PROJECTs\My\Construction\Src\RLM.Construction.Web\obj\Debug\ResolveAssemblyReference.cache
 D:\PROJECTs\My\Construction\Src\RLM.Construction.Web\obj\Debug\RLM.Construction.Web.dll
 D:\PROJECTs\My\Construction\Src\RLM.Construction.Web\obj\Debug\RLM.Construction.Web.pdb
+D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Data.dll
+D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Data.pdb
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Web.dll
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Web.pdb
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Web.xml
-D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Data.dll
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Entities.dll
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.ServiceHelpers.dll
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Services.dll
@@ -122,7 +123,6 @@ D:\projects\construction\RLM.Construction.Web\bin\Debug\log4net.dll
 D:\projects\construction\RLM.Construction.Web\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Entities.pdb
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Entities.xml
-D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Data.pdb
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Data.xml
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.ServiceHelpers.pdb
 D:\projects\construction\RLM.Construction.Web\bin\Debug\RLM.Construction.Services.pdb
