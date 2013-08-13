@@ -1,0 +1,53 @@
+----------------------------------------
+Timestamp: 5/22/2011 6:31:53 PM
+Message: HandlingInstanceID: f708bb39-939f-4718-ba59-e4a2344fc687
+<Exception>
+  <Description>An exception of type 'System.Data.SqlClient.SqlException' occurred and was caught.</Description>
+  <DateTime>2011-05-23 01:31:53Z</DateTime>
+  <ExceptionType>System.Data.SqlClient.SqlException, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType>
+  <Message>There is insufficient system memory in resource pool 'internal' to run this query.</Message>
+  <Source>.Net SqlClient Data Provider</Source>
+  <HelpLink />
+  <Property name="Errors">System.Data.SqlClient.SqlErrorCollection</Property>
+  <Property name="Class">17</Property>
+  <Property name="LineNumber">19</Property>
+  <Property name="Number">701</Property>
+  <Property name="Procedure">ProjectPhase_GetByProjectPhaseId</Property>
+  <Property name="Server">.\sqlexpress</Property>
+  <Property name="State">139</Property>
+  <Property name="ErrorCode">-2146232060</Property>
+  <Property name="Data">System.Collections.ListDictionaryInternal</Property>
+  <Property name="TargetSite">Void OnError(System.Data.SqlClient.SqlException, Boolean)</Property>
+  <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command)
+   at RLM.Construction.Data.Utility.ExecuteReader(Database database, DbCommand dbCommand) in D:\PROJECTs\My\Construction\Src\RLM.Construction.Data\Utility.cs:line 357
+   at RLM.Construction.Data.SqlClient.SqlProjectPhaseProviderBase.GetByProjectPhaseId(TransactionManager transactionManager, Int32 projectPhaseId, Int32 start, Int32 pageLength, Int32&amp; count) in D:\PROJECTs\My\Construction\Src\RLM.Construction.Data.SqlClient\SqlProjectPhaseProviderBase.generated.cs:line 768
+   at RLM.Construction.Services.ProjectPhaseServiceBase.GetByProjectPhaseId(Int32 projectPhaseId, Int32 start, Int32 pageLength, Int32&amp; totalCount) in D:\PROJECTs\My\Construction\Src\RLM.Construction.Services\ProjectPhaseServiceBase.generated.cs:line 310</StackTrace>
+  <additionalInfo>
+    <info name="MachineName" value="NET-TUTRAN" />
+    <info name="TimeStamp" value="5/22/2011 6:31:53 PM" />
+    <info name="FullName" value="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <info name="AppDomainName" value="/LM/W3SVC/1/ROOT/Construct-8-129505625265637984" />
+    <info name="ThreadIdentity" value="" />
+    <info name="WindowsIdentity" value="NT AUTHORITY\NETWORK SERVICE" />
+  </additionalInfo>
+</Exception>
+Category: Exceptions
+Priority: 0
+EventId: 100
+Severity: Error
+Title:YP.Mony Exception Handling
+----------------------------------------

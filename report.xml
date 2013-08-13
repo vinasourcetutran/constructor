@@ -1,0 +1,322 @@
+<NetTiersReport DALNameSpace="RLM.Construction.Data" SolutionLink="file:\\\c:\NetTiers\RLM.Construction\RLM.Construction.sln" ConnectionString="Data Source=.;Initial Catalog=Cossis;user id=sa;pwd=sa" FactoryType="RLM.Construction.Entities.EntityFactory">
+  <initialization startTime="129344883297690740" executionTime="00:00:06.4428113">
+    <Message level="0" startTime="129344883297846740" message="Validating parameters." />
+    <Message level="0" startTime="129344883297846740" message="Loading templates." executionTime="00:00:06.3336112" />
+    <Message level="0" startTime="129344883361338852" message="Creating folders and copying dependencies." />
+  </initialization>
+  <common startTime="129344883362118853" executionTime="00:00:03.6504064">
+    <File name="ListBase.cs" startTime="129344883362118853" />
+    <File name="TList.cs" startTime="129344883362274853" />
+    <File name="VList.cs" startTime="129344883362430854" />
+    <File name="IEntity.cs" startTime="129344883362586854" />
+    <File name="IEntityId.cs" startTime="129344883362742854" />
+    <File name="IEntityKey.cs" startTime="129344883362742854" />
+    <File name="EntityFactory.cs" startTime="129344883362898855" />
+    <File name="EntityFactoryBase.cs" startTime="129344883362898855" />
+    <File name="IEntityFactory.cs" startTime="129344883363054855" />
+    <File name="IEntityCacheItem.cs" startTime="129344883363210855" />
+    <File name="EntityCache.cs" startTime="129344883363210855" />
+    <File name="EntityLocator.cs" startTime="129344883363366855" />
+    <File name="EntityManager.cs" startTime="129344883363522856" />
+    <File name="BrokenRule.cs" startTime="129344883363522856" />
+    <File name="BrokenRulesList.cs" startTime="129344883363678856" />
+    <File name="CommonRules.cs" startTime="129344883363678856" />
+    <File name="ValidationRuleArgs.cs" startTime="129344883363834856" />
+    <File name="ValidationRuleHandler.cs" startTime="129344883363990856" />
+    <File name="ValidationRuleInfo.cs" startTime="129344883363990856" />
+    <File name="ValidationRules.cs" startTime="129344883364146857" />
+    <File name="EntityBaseCore.generated.cs" startTime="129344883364302857" />
+    <File name="EntityBase.cs" startTime="129344883364302857" />
+    <File name="EntityKeyBaseCore.generated.cs" startTime="129344883364458857" />
+    <File name="EntityKeyBase.cs" startTime="129344883364614858" />
+    <File name="SecurityContext.cs" startTime="129344883364614858" />
+    <File name="IProcessor.cs" startTime="129344883364770858" />
+    <File name="IProcessorResult.cs" startTime="129344883364770858" />
+    <File name="ProcessorBase.cs" startTime="129344883364926858" />
+    <File name="GenericProcessorResult.cs" startTime="129344883365082858" />
+    <File name="DomainUtil.cs" startTime="129344883365082858" />
+    <File name="ConnectionScope.cs" startTime="129344883365238859" />
+    <File name="IComponentService.cs" startTime="129344883365394859" />
+    <File name="ServiceBase.cst.cs" startTime="129344883365394859" />
+    <File name="ServiceBaseCore.cst.cs" startTime="129344883365550859" />
+    <File name="ServiceViewBase.cst.cs" startTime="129344883365706859" />
+    <File name="ServiceViewBaseCore.cst.cs" startTime="129344883365706859" />
+    <File name="ServiceResult.cs" startTime="129344883365862860" />
+    <File name="Filter.cs" startTime="129344883365862860" />
+    <File name="EntityPropertyComparer.cs" startTime="129344883366018860" />
+    <File name="GenericTypeConverter.cs" startTime="129344883366174860" />
+    <File name="StoredProcedures.sql" startTime="129344883366642861" />
+    <File name="Utility.cs" startTime="129344883387078897" />
+    <File name="StoredProcedureProvider.cs" startTime="129344883387234897" />
+    <File name="TransactionManager.cs" startTime="129344883387390898" />
+    <File name="DataRepository.cs" startTime="129344883387546898" />
+    <File name="IEntityProvider.cs" startTime="129344883387546898" />
+    <File name="IEntityViewProvider.cs" startTime="129344883387702898" />
+    <File name="EntityProviderBase.cs" startTime="129344883387858898" />
+    <File name="EntityProviderBaseCore.generated.cs" startTime="129344883387858898" />
+    <File name="EntityViewProviderBase.cs" startTime="129344883388014899" />
+    <File name="EntityViewProviderBaseCore.generated.cs" startTime="129344883388170899" />
+    <File name="NetTiersProvider.cs" startTime="129344883388326899" />
+    <File name="NetTiersProviderCollection.cs" startTime="129344883388482900" />
+    <File name="NetTiersServiceSection.cs" startTime="129344883388482900" />
+    <File name="ExpressionParserBase.cs" startTime="129344883388638900" />
+    <File name="SqlExpressionParser.cs" startTime="129344883388638900" />
+    <File name="SqlStringBuilder.cs" startTime="129344883388794900" />
+    <File name="SqlUtil.cs" startTime="129344883388950900" />
+    <File name="StringTokenizer.cs" startTime="129344883389106901" />
+    <File name="SqlClient\SqlNetTiersProvider.cs" startTime="129344883389106901" />
+    <File name="BaseDataSource.cs" startTime="129344883389262901" />
+    <File name="BaseDataSourceDesigner.cs" startTime="129344883389418901" />
+    <File name="CustomDataSource.cs" startTime="129344883389574901" />
+    <File name="CustomDataSourceDesigner.cs" startTime="129344883389730902" />
+    <File name="CustomParameter.cs" startTime="129344883389886902" />
+    <File name="DataParameter.cs" startTime="129344883389886902" />
+    <File name="EntityDataSource.cs" startTime="129344883390042902" />
+    <File name="EntityDataSourceFilter.cs" startTime="129344883390198903" />
+    <File name="EntityRelationship.cs" startTime="129344883390198903" />
+    <File name="EntityRelationshipMember.cs" startTime="129344883390354903" />
+    <File name="EntityTransactionModule.cs" startTime="129344883390510903" />
+    <File name="ILinkedDataSource.cs" startTime="129344883390510903" />
+    <File name="ManyToManyListRelationship.cs" startTime="129344883390666903" />
+    <File name="ManyToManyViewRelationship.cs" startTime="129344883390822904" />
+    <File name="OneToManyGridRelationship.cs" startTime="129344883390822904" />
+    <File name="OneToOneViewRelationship.cs" startTime="129344883390978904" />
+    <File name="ProviderDataSource.cs" startTime="129344883391134904" />
+    <File name="ProviderDataSourceDesigner.cs" startTime="129344883391134904" />
+    <File name="ReadOnlyDataSource.cs" startTime="129344883391290904" />
+    <File name="ReadOnlyDataSourceDesigner.cs" startTime="129344883391446905" />
+    <File name="SqlParameter.cs" startTime="129344883391446905" />
+    <File name="DepartmentDataSource.cs" startTime="129344883391602905" />
+    <File name="GroupDataSource.cs" startTime="129344883391758905" />
+    <File name="RepositoryDataSource.cs" startTime="129344883392070906" />
+    <File name="ItemDataSource.cs" startTime="129344883392070906" />
+    <File name="UserGroupDataSource.cs" startTime="129344883392226906" />
+    <File name="ContactorDataSource.cs" startTime="129344883392382906" />
+    <File name="ContractDataSource.cs" startTime="129344883392538907" />
+    <File name="ItemInRepositoryDataSource.cs" startTime="129344883392538907" />
+    <File name="ItemInProjectDataSource.cs" startTime="129344883392694907" />
+    <File name="PartnerDataSource.cs" startTime="129344883392850907" />
+    <File name="RoleDataSource.cs" startTime="129344883392850907" />
+    <File name="UnitConvertorDataSource.cs" startTime="129344883393006907" />
+    <File name="UserDataSource.cs" startTime="129344883393162908" />
+    <File name="AttachFileDataSource.cs" startTime="129344883393318908" />
+    <File name="StaffDataSource.cs" startTime="129344883393318908" />
+    <File name="RoleOfStaffDataSource.cs" startTime="129344883393474908" />
+    <File name="UnitDataSource.cs" startTime="129344883393630909" />
+    <File name="ProjectDataSource.cs" startTime="129344883393786909" />
+    <File name="ItemMovementDataSource.cs" startTime="129344883393942909" />
+    <File name="FormUtil.cs" startTime="129344883394098909" />
+    <File name="FormUtilBase.generated.cs" startTime="129344883394098909" />
+    <File name="MultiBindableTemplate.cs" startTime="129344883394254910" />
+    <File name="MultiFormView.cs" startTime="129344883394410910" />
+    <File name="EntityGridView.cs" startTime="129344883394410910" />
+    <File name="GridViewSearchPanel.cs" startTime="129344883394566910" />
+    <File name="Web.config" startTime="129344883394722910" />
+    <File name="entlib website configuration files" startTime="129344883394722910" />
+    <File name="Default.aspx" startTime="129344883394878911" />
+    <File name="Default.aspx.cs" startTime="129344883394878911" />
+    <File name="RLM.Construction.sln" startTime="129344883397374915" />
+    <File name="Services.csproj" startTime="129344883397530915" />
+    <File name="RLM.Construction.Entities.csproj" startTime="129344883397686916" />
+    <File name="RLM.Construction.Data.Data.csproj" startTime="129344883397842916" />
+    <File name="RLM.Construction.Entities.Data.SqlClient.csproj" startTime="129344883397998916" />
+    <File name="RLM.Construction.Web.csproj" startTime="129344883397998916" />
+    <File name="RLM.Construction.build" startTime="129344883398310917" />
+    <File name="EntityHelper.cs" startTime="129344883398466917" />
+    <File name="EntityUtil.cs" startTime="129344883398622917" />
+  </common>
+  <Table name="Department" startTime="129344883398622917" executionTime="00:00:00.1560003">
+    <File name="Department.generated.cs" startTime="129344883398778918" executionTime="00:00:00.0156000" />
+    <File name="Department.cs" startTime="129344883399090918" executionTime="00:00:00" />
+    <File name="DepartmentService.cs" startTime="129344883399090918" executionTime="00:00:00.0156000" />
+    <File name="DepartmentServiceBase.cs.generated" startTime="129344883399246918" executionTime="00:00:00.0468001" />
+    <File name="DepartmentProviderBaseCore.generated.cs" startTime="129344883399870920" executionTime="00:00:00" />
+    <File name="DepartmentProviderBase.generated.cs" startTime="129344883399870920" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\SqlDepartmentProviderBase.generated.cs" startTime="129344883400026920" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\DepartmentProvider.cs" startTime="129344883400182920" executionTime="00:00:00" />
+  </Table>
+  <Table name="Group" startTime="129344883400338920" executionTime="00:00:00.1560003">
+    <File name="Group.generated.cs" startTime="129344883400338920" executionTime="00:00:00.0312001" />
+    <File name="Group.cs" startTime="129344883400650921" executionTime="00:00:00" />
+    <File name="GroupService.cs" startTime="129344883400806921" executionTime="00:00:00" />
+    <File name="GroupServiceBase.cs.generated" startTime="129344883400962921" executionTime="00:00:00.0468001" />
+    <File name="GroupProviderBaseCore.generated.cs" startTime="129344883401430922" executionTime="00:00:00.0156001" />
+    <File name="GroupProviderBase.generated.cs" startTime="129344883401586923" executionTime="00:00:00" />
+    <File name="SqlClient\SqlGroupProviderBase.generated.cs" startTime="129344883401742923" executionTime="00:00:00" />
+    <File name="SqlClient\GroupProvider.cs" startTime="129344883401898923" executionTime="00:00:00" />
+  </Table>
+  <Table name="Repository" startTime="129344883401898923" executionTime="00:00:00.1716003">
+    <File name="Repository.generated.cs" startTime="129344883402054923" executionTime="00:00:00.0156001" />
+    <File name="Repository.cs" startTime="129344883402366924" executionTime="00:00:00" />
+    <File name="RepositoryService.cs" startTime="129344883402522924" executionTime="00:00:00" />
+    <File name="RepositoryServiceBase.cs.generated" startTime="129344883402522924" executionTime="00:00:00.0468001" />
+    <File name="RepositoryProviderBaseCore.generated.cs" startTime="129344883403146925" executionTime="00:00:00" />
+    <File name="RepositoryProviderBase.generated.cs" startTime="129344883403302926" executionTime="00:00:00" />
+    <File name="SqlClient\SqlRepositoryProviderBase.generated.cs" startTime="129344883403302926" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\RepositoryProvider.cs" startTime="129344883403614926" executionTime="00:00:00" />
+  </Table>
+  <Table name="Item" startTime="129344883403614926" executionTime="00:00:00.2028004">
+    <File name="Item.generated.cs" startTime="129344883403770926" executionTime="00:00:00.0468001" />
+    <File name="Item.cs" startTime="129344883404394927" executionTime="00:00:00" />
+    <File name="ItemService.cs" startTime="129344883404394927" executionTime="00:00:00" />
+    <File name="ItemServiceBase.cs.generated" startTime="129344883404550928" executionTime="00:00:00.0468001" />
+    <File name="ItemProviderBaseCore.generated.cs" startTime="129344883405174929" executionTime="00:00:00" />
+    <File name="ItemProviderBase.generated.cs" startTime="129344883405330929" executionTime="00:00:00" />
+    <File name="SqlClient\SqlItemProviderBase.generated.cs" startTime="129344883405486929" executionTime="00:00:00" />
+    <File name="SqlClient\ItemProvider.cs" startTime="129344883405642930" executionTime="00:00:00" />
+  </Table>
+  <Table name="UserGroup" startTime="129344883405642930" executionTime="00:00:00.1716003">
+    <File name="UserGroup.generated.cs" startTime="129344883405798930" executionTime="00:00:00.0156000" />
+    <File name="UserGroup.cs" startTime="129344883406110930" executionTime="00:00:00" />
+    <File name="UserGroupService.cs" startTime="129344883406266931" executionTime="00:00:00" />
+    <File name="UserGroupServiceBase.cs.generated" startTime="129344883406266931" executionTime="00:00:00.0624001" />
+    <File name="UserGroupProviderBaseCore.generated.cs" startTime="129344883406890932" executionTime="00:00:00.0156000" />
+    <File name="UserGroupProviderBase.generated.cs" startTime="129344883407046932" executionTime="00:00:00" />
+    <File name="SqlClient\SqlUserGroupProviderBase.generated.cs" startTime="129344883407202932" executionTime="00:00:00" />
+    <File name="SqlClient\UserGroupProvider.cs" startTime="129344883407358933" executionTime="00:00:00" />
+  </Table>
+  <Table name="Contactor" startTime="129344883407358933" executionTime="00:00:00.1716003">
+    <File name="Contactor.generated.cs" startTime="129344883407514933" executionTime="00:00:00.0312000" />
+    <File name="Contactor.cs" startTime="129344883407826933" executionTime="00:00:00" />
+    <File name="ContactorService.cs" startTime="129344883407982934" executionTime="00:00:00" />
+    <File name="ContactorServiceBase.cs.generated" startTime="129344883408138934" executionTime="00:00:00.0468001" />
+    <File name="ContactorProviderBaseCore.generated.cs" startTime="129344883408606935" executionTime="00:00:00.0156000" />
+    <File name="ContactorProviderBase.generated.cs" startTime="129344883408762935" executionTime="00:00:00" />
+    <File name="SqlClient\SqlContactorProviderBase.generated.cs" startTime="129344883408918935" executionTime="00:00:00.0156001" />
+    <File name="SqlClient\ContactorProvider.cs" startTime="129344883409074936" executionTime="00:00:00" />
+  </Table>
+  <Table name="Contract" startTime="129344883409230936" executionTime="00:00:00.1716003">
+    <File name="Contract.generated.cs" startTime="129344883409230936" executionTime="00:00:00.0312000" />
+    <File name="Contract.cs" startTime="129344883409698937" executionTime="00:00:00" />
+    <File name="ContractService.cs" startTime="129344883409698937" executionTime="00:00:00" />
+    <File name="ContractServiceBase.cs.generated" startTime="129344883409854937" executionTime="00:00:00.0468001" />
+    <File name="ContractProviderBaseCore.generated.cs" startTime="129344883410478938" executionTime="00:00:00" />
+    <File name="ContractProviderBase.generated.cs" startTime="129344883410634938" executionTime="00:00:00" />
+    <File name="SqlClient\SqlContractProviderBase.generated.cs" startTime="129344883410634938" executionTime="00:00:00.0156001" />
+    <File name="SqlClient\ContractProvider.cs" startTime="129344883410946939" executionTime="00:00:00" />
+  </Table>
+  <Table name="ItemInRepository" startTime="129344883410946939" executionTime="00:00:00.1716003">
+    <File name="ItemInRepository.generated.cs" startTime="129344883411102939" executionTime="00:00:00.0312001" />
+    <File name="ItemInRepository.cs" startTime="129344883411414940" executionTime="00:00:00" />
+    <File name="ItemInRepositoryService.cs" startTime="129344883411570940" executionTime="00:00:00" />
+    <File name="ItemInRepositoryServiceBase.cs.generated" startTime="129344883411726940" executionTime="00:00:00.0468001" />
+    <File name="ItemInRepositoryProviderBaseCore.generated.cs" startTime="129344883412194941" executionTime="00:00:00.0156000" />
+    <File name="ItemInRepositoryProviderBase.generated.cs" startTime="129344883412350941" executionTime="00:00:00" />
+    <File name="SqlClient\SqlItemInRepositoryProviderBase.generated.cs" startTime="129344883412506942" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\ItemInRepositoryProvider.cs" startTime="129344883412662942" executionTime="00:00:00" />
+  </Table>
+  <Table name="ItemInProject" startTime="129344883412818942" executionTime="00:00:00.1716003">
+    <File name="ItemInProject.generated.cs" startTime="129344883412818942" executionTime="00:00:00.0312001" />
+    <File name="ItemInProject.cs" startTime="129344883413130943" executionTime="00:00:00" />
+    <File name="ItemInProjectService.cs" startTime="129344883413286943" executionTime="00:00:00" />
+    <File name="ItemInProjectServiceBase.cs.generated" startTime="129344883413442943" executionTime="00:00:00.0468001" />
+    <File name="ItemInProjectProviderBaseCore.generated.cs" startTime="129344883413910944" executionTime="00:00:00.0156000" />
+    <File name="ItemInProjectProviderBase.generated.cs" startTime="129344883414066944" executionTime="00:00:00.0312001" />
+    <File name="SqlClient\SqlItemInProjectProviderBase.generated.cs" startTime="129344883414378945" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\ItemInProjectProvider.cs" startTime="129344883414534945" executionTime="00:00:00" />
+  </Table>
+  <Table name="Partner" startTime="129344883414690946" executionTime="00:00:00.1560002">
+    <File name="Partner.generated.cs" startTime="129344883414690946" executionTime="00:00:00.0312000" />
+    <File name="Partner.cs" startTime="129344883415002946" executionTime="00:00:00.0156000" />
+    <File name="PartnerService.cs" startTime="129344883415158946" executionTime="00:00:00" />
+    <File name="PartnerServiceBase.cs.generated" startTime="129344883415314947" executionTime="00:00:00.0468000" />
+    <File name="PartnerProviderBaseCore.generated.cs" startTime="129344883415782947" executionTime="00:00:00.0156001" />
+    <File name="PartnerProviderBase.generated.cs" startTime="129344883415938948" executionTime="00:00:00" />
+    <File name="SqlClient\SqlPartnerProviderBase.generated.cs" startTime="129344883416094948" executionTime="00:00:00" />
+    <File name="SqlClient\PartnerProvider.cs" startTime="129344883416250948" executionTime="00:00:00" />
+  </Table>
+  <Table name="Role" startTime="129344883416250948" executionTime="00:00:00.1716003">
+    <File name="Role.generated.cs" startTime="129344883416406949" executionTime="00:00:00.0312000" />
+    <File name="Role.cs" startTime="129344883416718949" executionTime="00:00:00" />
+    <File name="RoleService.cs" startTime="129344883416874949" executionTime="00:00:00" />
+    <File name="RoleServiceBase.cs.generated" startTime="129344883417030950" executionTime="00:00:00.0468000" />
+    <File name="RoleProviderBaseCore.generated.cs" startTime="129344883417498950" executionTime="00:00:00.0156001" />
+    <File name="RoleProviderBase.generated.cs" startTime="129344883417654951" executionTime="00:00:00" />
+    <File name="SqlClient\SqlRoleProviderBase.generated.cs" startTime="129344883417810951" executionTime="00:00:00" />
+    <File name="SqlClient\RoleProvider.cs" startTime="129344883417966951" executionTime="00:00:00" />
+  </Table>
+  <Table name="UnitConvertor" startTime="129344883417966951" executionTime="00:00:00.1716003">
+    <File name="UnitConvertor.generated.cs" startTime="129344883418122952" executionTime="00:00:00.0312000" />
+    <File name="UnitConvertor.cs" startTime="129344883418434952" executionTime="00:00:00" />
+    <File name="UnitConvertorService.cs" startTime="129344883418590952" executionTime="00:00:00" />
+    <File name="UnitConvertorServiceBase.cs.generated" startTime="129344883418746953" executionTime="00:00:00.0468000" />
+    <File name="UnitConvertorProviderBaseCore.generated.cs" startTime="129344883419214953" executionTime="00:00:00.0156001" />
+    <File name="UnitConvertorProviderBase.generated.cs" startTime="129344883419370954" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\SqlUnitConvertorProviderBase.generated.cs" startTime="129344883419526954" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\UnitConvertorProvider.cs" startTime="129344883419682954" executionTime="00:00:00" />
+  </Table>
+  <Table name="User" startTime="129344883419838955" executionTime="00:00:00.2340004">
+    <File name="User.generated.cs" startTime="129344883419838955" executionTime="00:00:00.0312000" />
+    <File name="User.cs" startTime="129344883420150955" executionTime="00:00:00.0156000" />
+    <File name="UserService.cs" startTime="129344883420306955" executionTime="00:00:00" />
+    <File name="UserServiceBase.cs.generated" startTime="129344883420462956" executionTime="00:00:00.0468000" />
+    <File name="UserProviderBaseCore.generated.cs" startTime="129344883420930956" executionTime="00:00:00.0156001" />
+    <File name="UserProviderBase.generated.cs" startTime="129344883421086957" executionTime="00:00:00.0780001" />
+    <File name="SqlClient\SqlUserProviderBase.generated.cs" startTime="129344883421866958" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\UserProvider.cs" startTime="129344883422178959" executionTime="00:00:00" />
+  </Table>
+  <Table name="AttachFile" startTime="129344883422178959" executionTime="00:00:00.2496004">
+    <File name="AttachFile.generated.cs" startTime="129344883422334959" executionTime="00:00:00.0156000" />
+    <File name="AttachFile.cs" startTime="129344883422646960" executionTime="00:00:00.0312000" />
+    <File name="AttachFileService.cs" startTime="129344883423114960" executionTime="00:00:00" />
+    <File name="AttachFileServiceBase.cs.generated" startTime="129344883423270961" executionTime="00:00:00.0468000" />
+    <File name="AttachFileProviderBaseCore.generated.cs" startTime="129344883423738961" executionTime="00:00:00" />
+    <File name="AttachFileProviderBase.generated.cs" startTime="129344883423894962" executionTime="00:00:00" />
+    <File name="SqlClient\SqlAttachFileProviderBase.generated.cs" startTime="129344883424050962" executionTime="00:00:00" />
+    <File name="SqlClient\AttachFileProvider.cs" startTime="129344883424206962" executionTime="00:00:00.0468001" />
+  </Table>
+  <Table name="Staff" startTime="129344883424674963" executionTime="00:00:00.1560003">
+    <File name="Staff.generated.cs" startTime="129344883424830963" executionTime="00:00:00.0156001" />
+    <File name="Staff.cs" startTime="129344883425142964" executionTime="00:00:00" />
+    <File name="StaffService.cs" startTime="129344883425142964" executionTime="00:00:00.0156000" />
+    <File name="StaffServiceBase.cs.generated" startTime="129344883425298964" executionTime="00:00:00.0468001" />
+    <File name="StaffProviderBaseCore.generated.cs" startTime="129344883425922965" executionTime="00:00:00" />
+    <File name="StaffProviderBase.generated.cs" startTime="129344883426078966" executionTime="00:00:00" />
+    <File name="SqlClient\SqlStaffProviderBase.generated.cs" startTime="129344883426078966" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\StaffProvider.cs" startTime="129344883426234966" executionTime="00:00:00" />
+  </Table>
+  <Table name="RoleOfStaff" startTime="129344883426390966" executionTime="00:00:00.1716003">
+    <File name="RoleOfStaff.generated.cs" startTime="129344883426390966" executionTime="00:00:00.0312001" />
+    <File name="RoleOfStaff.cs" startTime="129344883426858967" executionTime="00:00:00" />
+    <File name="RoleOfStaffService.cs" startTime="129344883426858967" executionTime="00:00:00" />
+    <File name="RoleOfStaffServiceBase.cs.generated" startTime="129344883427014967" executionTime="00:00:00.0468001" />
+    <File name="RoleOfStaffProviderBaseCore.generated.cs" startTime="129344883427638968" executionTime="00:00:00" />
+    <File name="RoleOfStaffProviderBase.generated.cs" startTime="129344883427794969" executionTime="00:00:00" />
+    <File name="SqlClient\SqlRoleOfStaffProviderBase.generated.cs" startTime="129344883427794969" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\RoleOfStaffProvider.cs" startTime="129344883427950969" executionTime="00:00:00.0156000" />
+  </Table>
+  <Table name="Unit" startTime="129344883428106969" executionTime="00:00:00.1560003">
+    <File name="Unit.generated.cs" startTime="129344883428262969" executionTime="00:00:00.0156001" />
+    <File name="Unit.cs" startTime="129344883428574970" executionTime="00:00:00" />
+    <File name="UnitService.cs" startTime="129344883428574970" executionTime="00:00:00.0156000" />
+    <File name="UnitServiceBase.cs.generated" startTime="129344883428730970" executionTime="00:00:00.0468001" />
+    <File name="UnitProviderBaseCore.generated.cs" startTime="129344883429354971" executionTime="00:00:00" />
+    <File name="UnitProviderBase.generated.cs" startTime="129344883429510972" executionTime="00:00:00" />
+    <File name="SqlClient\SqlUnitProviderBase.generated.cs" startTime="129344883429510972" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\UnitProvider.cs" startTime="129344883429666972" executionTime="00:00:00" />
+  </Table>
+  <Table name="Project" startTime="129344883429822972" executionTime="00:00:00.1560003">
+    <File name="Project.generated.cs" startTime="129344883429822972" executionTime="00:00:00.0312001" />
+    <File name="Project.cs" startTime="129344883430134973" executionTime="00:00:00.0156000" />
+    <File name="ProjectService.cs" startTime="129344883430290973" executionTime="00:00:00" />
+    <File name="ProjectServiceBase.cs.generated" startTime="129344883430446973" executionTime="00:00:00.0468001" />
+    <File name="ProjectProviderBaseCore.generated.cs" startTime="129344883430914974" executionTime="00:00:00.0156000" />
+    <File name="ProjectProviderBase.generated.cs" startTime="129344883431070974" executionTime="00:00:00" />
+    <File name="SqlClient\SqlProjectProviderBase.generated.cs" startTime="129344883431226975" executionTime="00:00:00" />
+    <File name="SqlClient\ProjectProvider.cs" startTime="129344883431382975" executionTime="00:00:00" />
+  </Table>
+  <Table name="ItemMovement" startTime="129344883431538975" executionTime="00:00:00.1716003">
+    <File name="ItemMovement.generated.cs" startTime="129344883431538975" executionTime="00:00:00.0312001" />
+    <File name="ItemMovement.cs" startTime="129344883431850976" executionTime="00:00:00.0156000" />
+    <File name="ItemMovementService.cs" startTime="129344883432006976" executionTime="00:00:00" />
+    <File name="ItemMovementServiceBase.cs.generated" startTime="129344883432162976" executionTime="00:00:00.0468001" />
+    <File name="ItemMovementProviderBaseCore.generated.cs" startTime="129344883432786977" executionTime="00:00:00" />
+    <File name="ItemMovementProviderBase.generated.cs" startTime="129344883432942978" executionTime="00:00:00" />
+    <File name="SqlClient\SqlItemMovementProviderBase.generated.cs" startTime="129344883432942978" executionTime="00:00:00.0156000" />
+    <File name="SqlClient\ItemMovementProvider.cs" startTime="129344883433254978" executionTime="00:00:00" />
+  </Table>
+  <summary>
+    <objectCount>272</objectCount>
+    <messageCount>0</messageCount>
+  </summary>
+</NetTiersReport>

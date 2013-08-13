@@ -1,0 +1,8 @@
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases_Script.PreDeployment.sql
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases_Script.PostDeployment.sql
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases_Database.sqlsettings
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases_Database.sqldeployment
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases_Database.sqlcmdvars
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases.deploymanifest
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\sql\debug\RLM.Construction.Databases.dbschema
+D:\PROJECTs\My\Construction\Src\RLM.Construction.Databases\obj\Debug\RLM.Construction.Databases.dbschema

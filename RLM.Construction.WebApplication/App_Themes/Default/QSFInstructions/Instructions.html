@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body, html
+        {
+        	font: 12px Arial, sans-serif;
+        }
+        
+        h3 
+        {
+        	font-size: 18px;
+        	text-align: center;
+        }
+        
+        pre 
+        {
+        	background: #FFF;
+        	border: 1px solid #ACE;
+        	padding: 5px;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+            _white-space: pre;
+            color: #036;
+        }
+        
+        li 
+        {
+        	margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>Instructions how to isolate this demo as a stand-alone application (removing the Quick Start Framework dependencies)</h3>
+
+<ol>
+<li>Remove the irrelevant Register directives at the top of the page which are used for common QSF header/footer, SessionDataSource, configurators, etc. registration, namely:
+
+<pre>
+    &lt;%@ Register TagPrefix="telerik" Namespace="Telerik.QuickStart" %&gt;
+    &lt;%@ Register TagPrefix="telerik" TagName="Header" Src="~/Common/Header.ascx" %&gt;
+    &lt;%@ Register TagPrefix="telerik" TagName="HeadTag" Src="~/Common/HeadTag.ascx" %&gt;
+    &lt;%@ Register TagPrefix="telerik" TagName="Footer" Src="~/Common/Footer.ascx" %&gt;
+    &lt;%@ Register TagPrefix="sds" Namespace="Telerik.Web.SessionDS" %&gt;
+</pre>
+</li>
+<li>Strip the corresponding tags (listed below) from the markup of the page:
+
+<pre>
+    &lt;telerik:Header …. /&gt;
+    &lt;telerik:HeadTag  …. /&gt;
+    &lt;telerik:Footer …. /&gt;
+    &lt;qsf:XXXXX   …./&gt;
+</pre>
+
+along with the controls that reside inside those tags. Detach the event handlers of these controls and erase the client or server logic which is executed for them.
+</li>
+<li>This tag:
+
+<pre>
+&lt;sds:SessionDataSource … /&gt;
+</pre>
+
+can be modified by replacing sds:SessionDataSource with asp:SqlDataSource and updating the signature of the data source’s commands and parameters accordingly. For example:
+
+Old definition
+<pre>
+&lt;sds:SessionDataSource ID="SessionDataSource1" runat="server" ConnectionString="&lt;%$ ConnectionStrings:NorthwindConnectionString %&gt;"            
+ProviderName="System.Data.SqlClient" SelectCommand="SELECT ProductID, ProductName, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, Discontinued FROM [Products]"
+DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = ?" InsertCommand="INSERT INTO Products(ProductName, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, Discontinued) VALUES (?, ?, ?, ?, ?, ?)"
+UpdateCommand="UPDATE [Products] SET [ProductName] = ?, [CategoryID] = ?, [QuantityPerUnit] = ?, [UnitPrice] = ?, [UnitsInStock] = ?, [Discontinued] = ? WHERE [ProductID] = ? AND [ProductName] = ? AND [CategoryID] = ? AND [QuantityPerUnit] = ? AND [UnitPrice] = ? AND [UnitsInStock] = ? AND [Discontinued] = ?"            
+PrimaryKeyFields="ProductID" OldValuesParameterFormatString="original_{0}" ConflictDetection="CompareAllValues"&gt;
+&lt;DeleteParameters&gt;
+       &lt;asp:Parameter Name="original_ProductID" Type="Int32" /&gt;
+         &lt;/DeleteParameters&gt;
+            &lt;UpdateParameters&gt;
+                &lt;asp:Parameter Name="ProductName" Type="String" /&gt;
+                &lt;asp:Parameter Name="QuantityPerUnit" Type="String" /&gt;
+                &lt;asp:Parameter Name="UnitPrice" Type="Decimal" /&gt;
+                &lt;asp:Parameter Name="UnitsInStock" Type="Int16" /&gt;
+                &lt;asp:Parameter Name="Discontinued" Type="Boolean" /&gt;
+                &lt;asp:Parameter Name="original_ProductID" Type="Int32" /&gt;
+                &lt;asp:Parameter Name="original_ProductName" Type="String" /&gt;
+                &lt;asp:Parameter Name="original_QuantityPerUnit" Type="String" /&gt;
+                &lt;asp:Parameter Name="original_UnitPrice" Type="Decimal" /&gt;
+                &lt;asp:Parameter Name="original_UnitsInStock" Type="Int16" /&gt;
+                &lt;asp:Parameter Name="original_Discontinued" Type="Boolean" /&gt;
+            &lt;/UpdateParameters&gt;
+            &lt;InsertParameters&gt;
+                &lt;asp:Parameter Name="ProductName" Type="String" /&gt;
+                &lt;asp:Parameter Name="QuantityPerUnit" Type="String" /&gt;
+                &lt;asp:Parameter Name="UnitPrice" Type="Decimal" /&gt;
+                &lt;asp:Parameter Name="UnitsInStock" Type="Int16" /&gt;
+                &lt;asp:Parameter Name="Discontinued" Type="Boolean" /&gt;
+            &lt;/InsertParameters&gt;
+&lt;/sds:SessionDataSource&gt;
+</pre>
+
+New definition
+<pre>
+&lt;asp:SqlDataSource ID="SessionDataSource1" runat="server" ConnectionString="&lt;%$ ConnectionStrings:NorthwindConnectionString %&gt;"
+ProviderName="System.Data.SqlClient" SelectCommand="SELECT ProductID, ProductName, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, Discontinued FROM [Products]"
+DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = @original_ProductID" InsertCommand="INSERT INTO Products(ProductName, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, Discontinued) VALUES (@ProductName, @CategoryID, @QuantityPerUnit, @UnitPrice, @UnitsInStock, @Discontinued)"
+UpdateCommand="UPDATE [Products] SET [ProductName] = @ProductName, [CategoryID] = @CategoryID, [QuantityPerUnit] = @QuantityPerUnit, [UnitPrice] = @UnitPrice, [UnitsInStock] = @UnitsInStock, [Discontinued] = @Discontinued WHERE [ProductID] = @original_ProductID AND [ProductName] = @original_ProductName AND [CategoryID] = @original_CategoryID AND [QuantityPerUnit] = @original_QuantityPerUnit AND [UnitPrice] = @original_UnitPrice AND [UnitsInStock] = @original_UnitsInStock AND [Discontinued] = @original_Discontinued"
+            OldValuesParameterFormatString="original_{0}" ConflictDetection="CompareAllValues"&gt;
+            &lt;DeleteParameters&gt;
+                &lt;asp:Parameter Name="original_ProductID" Type="Int32" /&gt;
+            &lt;/DeleteParameters&gt;
+            &lt;UpdateParameters&gt;
+                &lt;asp:Parameter Name="ProductName" Type="String" /&gt;
+                &lt;asp:Parameter Name="QuantityPerUnit" Type="String" /&gt;
+                &lt;asp:Parameter Name="UnitPrice" Type="Decimal" /&gt;
+                &lt;asp:Parameter Name="UnitsInStock" Type="Int16" /&gt;
+                &lt;asp:Parameter Name="Discontinued" Type="Boolean" /&gt;
+                &lt;asp:Parameter Name="original_ProductID" Type="Int32" /&gt;
+                &lt;asp:Parameter Name="original_ProductName" Type="String" /&gt;
+                &lt;asp:Parameter Name="original_QuantityPerUnit" Type="String" /&gt;
+                &lt;asp:Parameter Name="original_UnitPrice" Type="Decimal" /&gt;
+                &lt;asp:Parameter Name="original_UnitsInStock" Type="Int16" /&gt;
+                &lt;asp:Parameter Name="original_Discontinued" Type="Boolean" /&gt;
+            &lt;/UpdateParameters&gt;
+            &lt;InsertParameters&gt;
+                &lt;asp:Parameter Name="ProductName" Type="String" /&gt;
+                &lt;asp:Parameter Name="QuantityPerUnit" Type="String" /&gt;
+                &lt;asp:Parameter Name="UnitPrice" Type="Decimal" /&gt;
+                &lt;asp:Parameter Name="UnitsInStock" Type="Int16" /&gt;
+                &lt;asp:Parameter Name="Discontinued" Type="Boolean" /&gt;
+            &lt;/InsertParameters&gt;
+&lt;/asp:SqlDataSource&gt;
+</pre>
+
+Note that basically the SessionDataSource is a Telerik home-grown SqlDataSource which stores the data in ASP.NETSession instead of directly in the database (as the regular asp SqlDataSource does). The code of the SessionDataSource is available at this default installation location (the path may vary if you choose other target installation folder):
+
+<pre>
+C:\Program Files\telerik\RadControls for ASP.NET AJAX QX 20XX\Live Demos\App_Code\SessionDataSource.cs
+</pre></li>
+<li>In case you installed RadControls for ASP.NET AJAX trial or dev version, you can find their source code at this default installation location (the path may vary if you choose other target installation folder):
+
+<pre>
+C:\Program Files\telerik\RadControls for ASP.NET AJAX QX 20XX\Live Demos
+</pre>
+
+and run them from Start menu -> Programs -> Telerik -> RadControls for ASP.NET AJAX QX 20XX/RadControls for ASP.NET AJAX QX 20XX Live Examples shortcut. 
+</li>
+<li>If you have an informational module with nested div tags and cssclasses named bigModule/bigModuleBottom, strip those nested divs as well because you do not need them.</li>
+<li>If the demo uses WebServices, LINQ to XXXX models, Entity Framework models, custom classes, etc., you can find those either under the respective example’s code viewer or at this default installation location (the path may vary if you choose other target installation folder):
+
+<pre>
+C:\Program Files\telerik\RadControls for ASP.NET AJAX QX 20XX\Live Demos\App_Code 
+</pre>
+
+Provided that you build your own sample web site, you need to copy the abovementioned WebServices, models, custom classes, etc. as is in the App_Code folder of that sample web site.
+</li>
+<li>The data sources used on the examples are placed either in the root demo folder or at this default installation location (the path may vary if you choose other target installation folder):
+
+<pre>
+C:\Program Files\telerik\RadControls for ASP.NET AJAX QX 20XX\Live Demos\App_Data
+</pre>
+
+Provided that you build your own sample web site, you need to copy the abovementioned data sources either in the root or in the App_Data folder of you sample web site and attach the SQL databases to your SQL server if you plan to use them.
+</li></ol>
+
+</body>
+</html>

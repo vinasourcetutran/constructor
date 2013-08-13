@@ -1,0 +1,116 @@
+/* RadSlider QSF Overview skin */
+
+/* ------------------- HORIZONTAL SLIDER CLASSES --------------------------------------------------------- */
+.RadSlider_QSFOverview .rslHorizontal
+{
+	height: 21px; line-height: 21px;
+}
+
+.RadSlider_QSFOverview .rslHorizontal a.rslHandle
+{
+	width: 6px; height: 19px;
+	background-image: url(QSFOverview/Handles.gif);
+	background-repeat: no-repeat;
+}
+
+.RadSlider_QSFOverview .rslHorizontal .rslDecrease
+{
+	background-position: 0 9px;
+}
+
+.RadSlider_QSFOverview .rslHorizontal .rslIncrease
+{
+	background-position: -6px 9px;
+}
+
+.RadSlider_QSFOverview .rslHorizontal a.rslDraghandle
+{
+	top: 0;
+	margin-top: -7px;
+	width: 12px; height: 19px;
+	background-image: url(QSFOverview/DragHandle.gif);
+	background-repeat: no-repeat;
+}
+
+.RadSlider_QSFOverview .rslHorizontal a.rslDraghandle:hover
+{
+	background-position: -12px 0;
+}
+
+.RadSlider_QSFOverview .rslHorizontal a.rslDraghandle:active,
+.RadSlider_QSFOverview .rslHorizontal a.rslDraghandle:focus
+{
+	background-position: -24px 0;
+}
+
+.RadSlider_QSFOverview .rslHorizontal .rslTrack
+{
+	left: 6px; top: 0;
+	height: 3px;
+	margin-top: 9px;
+	background: url(QSFOverview/TrackBgr.gif) repeat-x;
+}
+
+.RadSlider_QSFOverview .rslHorizontal .rslSelectedregion
+{
+	height: 3px;
+}
+
+/* ------------------- HORIZONTAL SLIDER CLASSES END ---------------------------------------------------- */
+
+/* ------------------- VERTICAL SLIDER CLASSES ---------------------------------------------------------- */
+.RadSlider_QSFOverview .rslVertical
+{
+	width: 19px;
+}
+
+.RadSlider_QSFOverview .rslVertical .rslHandle
+{
+	width: 19px; height: 6px; line-height: 6px;
+	background-image: url(QSFOverview/HandlesVertical.gif);
+	background-repeat: no-repeat;
+}
+
+.RadSlider_QSFOverview .rslVertical .rslDecrease
+{
+	background-position: 9px 0;
+}
+
+.RadSlider_QSFOverview .rslVertical .rslIncrease
+{
+	background-position: 9px -6px;
+}
+
+.RadSlider_QSFOverview .rslVertical .rslTrack
+{
+	top: 6px; left: 0;
+	width: 3px;
+	margin-left: 9px;
+	background: #efebe7 url(QSFOverview/TrackVerticalBgr.gif) repeat-y right 0;
+}
+
+.RadSlider_QSFOverview .rslVertical a.rslDraghandle
+{
+	top: 0;
+	width: 19px; height: 12px;
+	margin-left: -7px;
+	background-image: url(QSFOverview/DragVerticalHandle.gif);
+	background-repeat: no-repeat;
+}
+
+.RadSlider_QSFOverview .rslVertical a.rslDraghandle:hover
+{
+	background-position: 0 -12px;
+}
+
+.RadSlider_QSFOverview .rslVertical a.rslDraghandle:active,
+.RadSlider_QSFOverview .rslVertical a.rslDraghandle:focus
+{
+	background-position: 0 -24px;
+}
+
+.RadSlider_QSFOverview .rslVertical .rslSelectedregion
+{
+	width: 3px;
+}
+/* ------------------- VERTICAL SLIDER CLASSES END ----------------------------------------------------- */

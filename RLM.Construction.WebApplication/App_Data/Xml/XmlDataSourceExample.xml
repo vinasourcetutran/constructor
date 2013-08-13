@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Customers>
+  <Customer CustomerID="0" CompanyName="Alfreds Futterkiste" ContactName="Maria Anders">
+  </Customer>
+  <Customer CustomerID="1" CompanyName="Antonio Moreno Taquería" ContactName="Ana Trujillo">
+  </Customer>
+  <Customer CustomerID="2" CompanyName="Around the Horn" ContactName="Antonio Moreno">
+  </Customer>
+  <Customer CustomerID="3" CompanyName="Berglunds snabbköp" ContactName="Thomas Hardy">
+  </Customer>
+  <Customer CustomerID="4" CompanyName="Blauer See Delikatessen" ContactName="Christina Berglund">
+  </Customer>
+</Customers>

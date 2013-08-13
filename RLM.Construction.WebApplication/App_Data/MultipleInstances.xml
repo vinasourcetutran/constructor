@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Appointments>
+	<NextID>14</NextID>
+	<Resources>
+		<Room>
+			<Key>1</Key>
+			<Text>Meeting room 101</Text>
+		</Room>
+		<Room>
+			<Key>2</Key>
+			<Text>Meeting room 201</Text>
+		</Room>
+		<User>
+			<Key>1</Key>
+			<Text>Alex</Text>
+		</User>
+		<User>
+			<Key>2</Key>
+			<Text>Bob</Text>
+		</User>
+		<User>
+			<Key>3</Key>
+			<Text>Charlie</Text>
+		</User>
+	</Resources>
+	<Appointment>
+		<ID>1</ID>
+		<Subject>Breakfast</Subject>
+		<Start>2007-03-23T05:00Z</Start>
+		<End>2007-03-23T06:00Z</End>
+		<Resources>
+			<User Key="1" />
+		</Resources>
+	</Appointment>
+	<Appointment>
+		<ID>3</ID>
+		<Subject>Appointment with the dentist.</Subject>
+		<Start>2007-03-23T08:30Z</Start>
+		<End>2007-03-23T09:30Z</End>
+		<Resources>
+			<User Key="1" />
+		</Resources>
+	</Appointment>
+	<Appointment>
+		<ID>4</ID>
+		<Subject>Lunch</Subject>
+		<Start>2007-03-23T09:30Z</Start>
+		<End>2007-03-23T10:30Z</End>
+		<Resources>
+			<User Key="1" />
+		</Resources>
+	</Appointment>
+	<Appointment>
+		<ID>5</ID>
+		<Subject>Bob's birthday</Subject>
+		<Start>2007-03-21T21:00Z</Start>
+		<End>2007-03-22T21:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>6</ID>
+		<Subject>Call Charlie about the Project</Subject>
+		<Start>2007-03-22T06:30Z</Start>
+		<End>2007-03-22T08:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>7</ID>
+		<Subject>Meeting with Alex</Subject>
+		<Start>2007-03-24T06:00Z</Start>
+		<End>2007-03-24T07:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>9</ID>
+		<Subject>Take the car to the service</Subject>
+		<Start>2007-03-01T07:00Z</Start>
+		<End>2007-03-01T08:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>10</ID>
+		<Subject>Math exam</Subject>
+		<Start>2007-03-06T08:00Z</Start>
+		<End>2007-03-06T10:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>11</ID>
+		<Subject>History exam</Subject>
+		<Start>2007-03-07T10:00Z</Start>
+		<End>2007-03-07T12:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>12</ID>
+		<Subject>Bowling tournament</Subject>
+		<Start>2007-03-15T16:00Z</Start>
+		<End>2007-03-15T19:00Z</End>
+	</Appointment>
+	<Appointment>
+		<ID>13</ID>
+		<Subject>Grand Canyon tour</Subject>
+		<Start>2007-03-17T09:00Z</Start>
+		<End>2007-03-17T15:00Z</End>
+	</Appointment>
+</Appointments>

@@ -1,0 +1,10 @@
+D:\Projects\XayDung24h.vn\wan\src\Configuration\bin\Debug\Configuration.dll
+D:\Projects\XayDung24h.vn\wan\src\Configuration\bin\Debug\Configuration.pdb
+D:\Projects\XayDung24h.vn\wan\src\Configuration\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\XayDung24h.vn\wan\src\Configuration\obj\Debug\Configuration.dll
+D:\Projects\XayDung24h.vn\wan\src\Configuration\obj\Debug\Configuration.pdb
+D:\Projects\RLM.CMS\RLM.Configuration\bin\Debug\Configuration.dll
+D:\Projects\RLM.CMS\RLM.Configuration\bin\Debug\Configuration.pdb
+D:\Projects\RLM.CMS\RLM.Configuration\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\RLM.CMS\RLM.Configuration\obj\Debug\Configuration.dll
+D:\Projects\RLM.CMS\RLM.Configuration\obj\Debug\Configuration.pdb

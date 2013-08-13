@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{794327CE-DC0A-4381-89EE-4C00AFB08D5A}</ProjectGuid>
+    <ProjectType>Local</ProjectType>
+    <OutputType>Library</OutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>RLM.Construction.Services</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\RLM.Construction.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <RootNamespace>RLM.Construction.Services</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>RLM.Construction.Services.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>RLM.Construction.Services.xml</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GenerateDebug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>RLM.Construction.Services.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\RLM.Configuration\RLM.Configuration.csproj">
+      <Project>{2B712C96-C336-4B2D-9686-AC3CF82C3F03}</Project>
+      <Name>RLM.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RLM.Construction.Entities\RLM.Construction.Entities.csproj">
+      <Name>RLM.Construction.Entities</Name>
+      <Project>{20E43088-4618-4F4A-B8AD-FC31B50D94CD}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\RLM.Construction.Data\RLM.Construction.Data.csproj">
+      <Name>RLM.Construction.Data</Name>
+      <Project>{041C1BBE-0BFB-4D45-8125-9AB0BBC09A92}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\RLM.Construction.Data.SqlClient\RLM.Construction.Data.SqlClient.csproj">
+      <Name>RLM.Construction.Data.SqlClient</Name>
+      <Project>{8996A7B4-57D3-440B-A545-A701844B8C4A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\RLM.Core\RLM.Core.csproj">
+      <Project>{91B9ED72-B2C7-41DC-ADDD-621FB830849A}</Project>
+      <Name>RLM.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- Custom code folder: c:\NetTiers\RLM.Construction\RLM.Construction.Services\App_Code -->
+  <ItemGroup>
+    <Compile Include="App_Code\**\*.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvanceRequestService.cs" />
+    <Compile Include="AdvanceRequestServiceBase.generated.cs" />
+    <Compile Include="AppConfigService.cs" />
+    <Compile Include="AppConfigServiceBase.generated.cs" />
+    <Compile Include="ApplicationService.cs" />
+    <Compile Include="ApplicationServiceBase.generated.cs" />
+    <Compile Include="CommentService.cs" />
+    <Compile Include="CommentServiceBase.generated.cs" />
+    <Compile Include="DepartmentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartmentServiceBase.generated.cs">
+      <DependentUpon>DepartmentService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FamilyService.cs" />
+    <Compile Include="FamilyServiceBase.generated.cs" />
+    <Compile Include="GraphService.cs" />
+    <Compile Include="GroupService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GroupServiceBase.generated.cs">
+      <DependentUpon>GroupService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IdentificationInfomationService.cs" />
+    <Compile Include="IdentificationInfomationServiceBase.generated.cs" />
+    <Compile Include="ItemInItemService.cs" />
+    <Compile Include="ItemInItemServiceBase.generated.cs" />
+    <Compile Include="ItemIOItemService.cs" />
+    <Compile Include="ItemIOItemServiceBase.generated.cs" />
+    <Compile Include="ItemIOTicketService.cs" />
+    <Compile Include="ItemIOTicketServiceBase.generated.cs" />
+    <Compile Include="ProjectPhaseService.cs" />
+    <Compile Include="ProjectPhaseServiceBase.generated.cs" />
+    <Compile Include="RelatedContractService.cs" />
+    <Compile Include="RelatedContractServiceBase.generated.cs" />
+    <Compile Include="RepositoryService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RepositoryServiceBase.generated.cs">
+      <DependentUpon>RepositoryService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemServiceBase.generated.cs">
+      <DependentUpon>ItemService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResourceDataService.cs" />
+    <Compile Include="ResourceDataServiceBase.generated.cs" />
+    <Compile Include="RewardService.cs" />
+    <Compile Include="RewardServiceBase.generated.cs" />
+    <Compile Include="ServiceRepository.cs" />
+    <Compile Include="TaskMemberService.cs" />
+    <Compile Include="TaskMemberServiceBase.generated.cs" />
+    <Compile Include="TaskService.cs" />
+    <Compile Include="TaskServiceBase.generated.cs" />
+    <Compile Include="UnitTree.cs" />
+    <Compile Include="UserGroupService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserGroupServiceBase.generated.cs">
+      <DependentUpon>UserGroupService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContactorService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContactorServiceBase.generated.cs">
+      <DependentUpon>ContactorService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContractService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContractServiceBase.generated.cs">
+      <DependentUpon>ContractService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemInRepositoryService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemInRepositoryServiceBase.generated.cs">
+      <DependentUpon>ItemInRepositoryService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemInProjectService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemInProjectServiceBase.generated.cs">
+      <DependentUpon>ItemInProjectService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartnerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartnerServiceBase.generated.cs">
+      <DependentUpon>PartnerService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleServiceBase.generated.cs">
+      <DependentUpon>RoleService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitConvertorService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitConvertorServiceBase.generated.cs">
+      <DependentUpon>UnitConvertorService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserInApplicationService.cs" />
+    <Compile Include="UserInApplicationServiceBase.generated.cs" />
+    <Compile Include="UserService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserServiceBase.generated.cs">
+      <DependentUpon>UserService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttachFileService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttachFileServiceBase.generated.cs">
+      <DependentUpon>AttachFileService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StaffService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StaffServiceBase.generated.cs">
+      <DependentUpon>StaffService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleOfStaffService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleOfStaffServiceBase.generated.cs">
+      <DependentUpon>RoleOfStaffService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitServiceBase.generated.cs">
+      <DependentUpon>UnitService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectServiceBase.generated.cs">
+      <DependentUpon>ProjectService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemMovementService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemMovementServiceBase.generated.cs">
+      <DependentUpon>ItemMovementService.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <!-- 
+			<Compile Include="Processors\**\*.cs">
+			   <SubType>Code</SubType>
+			</Compile>		
+		 -->
+    <Compile Include="Processors\GenericProcessorResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processors\IProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processors\IProcessorResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processors\ProcessorBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecurityContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DomainUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConnectionScope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceBaseCore.generated.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ServiceBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IComponentService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilityService.cs" />
+    <Compile Include="Views\ServiceViewBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ServiceViewBaseCore.generated.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ServiceViewBase.cs</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RLM.Construction.Services.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

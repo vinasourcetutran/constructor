@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Appointments>
+  <NextID>65</NextID>
+  <Resources>
+    <Calendar>
+      <Key>1</Key>
+      <Text>Teachers</Text>
+    </Calendar>
+    <Calendar>
+      <Key>2</Key>
+      <Text>Students</Text>
+    </Calendar>
+  </Resources>
+  <Appointment>
+    <ID>45</ID>
+    <Subject>Discrete Mathematics - Lectures</Subject>
+    <Description>Lecturer: Graph Tree</Description>
+    <Start>2009-02-02T08:15Z</Start>
+    <End>2009-02-02T10:00Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>46</ID>
+    <Subject>Object-Oriented Programming - Exercises</Subject>
+    <Description>Lecturer: Konstruktor M. Polymorphus</Description>
+    <Start>2009-02-02T09:15Z</Start>
+    <End>2009-02-02T11:00Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>47</ID>
+    <Subject>Differential Geometry - Lectures</Subject>
+    <Description>Lecturer: Nikolas Splain</Description>
+    <Start>2009-02-02T10:15Z</Start>
+    <End>2009-02-02T12:00Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>48</ID>
+    <Subject>Lunch time</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T12:00Z</Start>
+    <End>2009-02-02T13:00Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>49</ID>
+    <Subject>Algorithms - Exercises</Subject>
+    <Description>Lecturer: Complex O. Linear</Description>
+    <Start>2009-02-02T13:05Z</Start>
+    <End>2009-02-02T13:45Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>50</ID>
+    <Subject>Mathematical Analisis - Lectures</Subject>
+    <Description>Lecturer: Lenny Integraloff</Description>
+    <Start>2009-02-02T13:45Z</Start>
+    <End>2009-02-02T15:15Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>51</ID>
+    <Subject>Liniar Algebra and Anlitical Geometry - Exercices</Subject>
+    <Description>Lecturer: John Matrix</Description>
+    <Start>2009-02-02T15:15Z</Start>
+    <End>2009-02-02T16:00Z</End>
+    <Resources>
+      <Calendar Key="1" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>53</ID>
+    <Subject>Attending lectures on Discrete Mathematics</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T08:05Z</Start>
+    <End>2009-02-02T08:45Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>55</ID>
+    <Subject>Attending exercises on Object-Oriented Programming</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T09:25Z</Start>
+    <End>2009-02-02T10:25Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>56</ID>
+    <Subject>Long nap Zzzzzzzz Zzzzzzzz Zzzzzzzz</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T10:25Z</Start>
+    <End>2009-02-02T12:15Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>57</ID>
+    <Subject>Having lucnh</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T12:15Z</Start>
+    <End>2009-02-02T14:15Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>58</ID>
+    <Subject>Attending lectures on Mathematical Analisis</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T14:25Z</Start>
+    <End>2009-02-02T15:15Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>59</ID>
+    <Subject>Attending exercises on Linear Algebra and Analitical Geometry</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T15:25Z</Start>
+    <End>2009-02-02T16:58Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>60</ID>
+    <Subject>Wakes up to find out he fell asleep during the lecture...or it was exercise?</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T16:58Z</Start>
+    <End>2009-02-02T17:30Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+  <Appointment>
+    <ID>64</ID>
+    <Subject>Short nap Zzzzzz</Subject>
+    <Description>
+    </Description>
+    <Start>2009-02-02T08:45Z</Start>
+    <End>2009-02-02T09:16Z</End>
+    <Resources>
+      <Calendar Key="2" />
+    </Resources>
+  </Appointment>
+</Appointments>

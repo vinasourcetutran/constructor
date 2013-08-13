@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Appointments>
+  <NextID>9</NextID>
+  <Resources>
+	<Calendar>
+	  <Key>1</Key>
+	  <Text>Work Calendar</Text>
+	</Calendar>
+	<Calendar>
+	  <Key>2</Key>
+	  <Text>Home Calendar</Text>
+	</Calendar>
+	<Calendar>
+	  <Key>3</Key>
+	  <Text>Q1 Calendar</Text>
+	</Calendar>
+	<Calendar>
+	  <Key>4</Key>
+	  <Text>Q2 Calendar</Text>
+	</Calendar>
+  </Resources>
+  <Appointment>
+	<ID>1</ID>
+	<Subject>Meeting with customers.</Subject>
+	<Start>2007-03-30T06:00Z</Start>
+	<End>2007-03-30T08:00Z</End>
+	<Resources>
+	  <Calendar Key="1" />
+	</Resources>
+	<Attribute Key="Annotations" Value="Sample note" />
+  </Appointment>
+  <Appointment>
+	<ID>2</ID>
+	<Subject>Take the car to the service.</Subject>
+	<Start>2007-03-30T09:00Z</Start>
+	<End>2007-03-30T10:30Z</End>
+	<Resources>
+	  <Calendar Key="2" />
+	</Resources>
+  </Appointment>
+  <Appointment>
+	<ID>3</ID>
+	<Subject>Guided tour for the investors.</Subject>
+	<Start>2007-03-28T10:00Z</Start>
+	<End>2007-03-28T12:00Z</End>
+	<Resources>
+	  <Calendar Key="1" />
+	  <Calendar Key="3" />
+	</Resources>
+  </Appointment>
+  <Appointment>
+	<ID>4</ID>
+	<Subject>RadMenu documentation review.</Subject>
+	<Start>2007-03-26T13:00Z</Start>
+	<End>2007-03-26T15:00Z</End>
+	<Resources>
+	  <Calendar Key="1" />
+	  <Calendar Key="3" />
+	</Resources>
+  </Appointment>
+  <Appointment>
+	<ID>5</ID>
+	<Subject>Take the cat to a doctor.</Subject>
+	<Start>2007-03-30T10:00Z</Start>
+	<End>2007-03-30T11:00Z</End>
+	<Resources>
+	  <Calendar Key="2" />
+	</Resources>
+	<Attribute Key="Annotations" Value="Sample note" />
+  </Appointment>
+  <Appointment>
+	<ID>6</ID>
+	<Subject>Restyle RadScheduler.</Subject>
+	<Start>2007-03-20T09:00Z</Start>
+	<End>2007-03-31T10:30Z</End>
+	<Resources>
+	  <Calendar Key="1" />
+	  <Calendar Key="3" />
+	  <Calendar Key="4" />
+	</Resources>
+  </Appointment>
+  <Appointment>
+	<ID>7</ID>
+	<Subject>Watch Lord of the Rings on TV.</Subject>
+	<Start>2007-03-29T20:00Z</Start>
+	<End>2007-03-29T23:00Z</End>
+	<RecurrenceRule>
+	  <![CDATA[DTSTART:20070329T200000Z
+DTEND:20070329T230000Z
+RRULE:FREQ=DAILY;UNTIL=20070331T230000Z;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR,SA,SU
+EXDATE:20070331T200000Z
+]]>
+	</RecurrenceRule>
+	<Resources>
+	  <Calendar Key="2" />
+	</Resources>
+  </Appointment>
+  <Appointment>
+	<ID>8</ID>
+	<Subject>Skin Review.</Subject>
+	<Start>2007-03-25T14:00Z</Start>
+	<End>2007-03-25T18:00Z</End>
+	<Resources>
+	  <Calendar Key="1" />
+	  <Calendar Key="3" />
+	</Resources>
+  </Appointment>
+</Appointments>

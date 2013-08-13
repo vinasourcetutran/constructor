@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books>
+    <book Title="Pure JavaScript" Price="49.95"/>
+    <book Title="Effective C++" Price="25.99"/>
+    <book Title="Assembly Language: Step-By-Step" Price="34.95"/>
+    <book Title="Oracle PL/SQL Best Practices" Price="64.99"/>
+</books>
+
