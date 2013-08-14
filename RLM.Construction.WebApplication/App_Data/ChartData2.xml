@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<books>
-  <book Month="October" Cars="2000" Bikes="800" Trailers="500"/>
-  <book Month="November" Cars="4500" Bikes="500" Trailers="900"/>
-  <book Month="December" Cars="6000" Bikes="500" Trailers="1000"/>
-  <book Month="January" Cars="4000" Bikes="700" Trailers="800"/>
-</books>
