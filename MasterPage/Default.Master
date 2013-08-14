@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="RLM.Construction.WebApplication.MasterPage.Default" %>
+
+<%@ Register Src="~/UserControl/MainLeftNav.ascx" TagName="MainLeftNav" TagPrefix="uc" %>
+<%@ Register Src="~/UserControl/MainTopTab.ascx" TagName="MainTopTab" TagPrefix="uc" %>
+<%@ Register Src="~/UserControl/ScriptReference.ascx" TagName="ScriptReference" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title id='ltrPageTitle' runat="server">Default page</title>
+    <meta name="description" content="<asp:Literal ID='ltrDescription' runat='server'></asp:Literal>" />
+    <meta name="keywords" content="<asp:Literal ID='ltrKeyword' runat='server'></asp:Literal>" />
+    <meta name="author" content="<asp:Literal ID='ltrAuthor' runat='server'></asp:Literal>" />
+    <uc:ScriptReference ID="scriptReference" runat="server" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="Heading" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="BODY">
+    <form id="form1" runat="server">
+    <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="false" Skin="Windows7">
+    </telerik:RadSkinManager>
+    <telerik:RadScriptManager ID="ScriptManager" runat="server">
+        <Scripts>
+        </Scripts>
+    </telerik:RadScriptManager>
+    <div id='contentArea' class="demoArea qsfClear MasterMainContentWrapper">
+        <div>
+            <uc:MainLeftNav ID="MainLeftNav1" runat="server" />
+        </div>
+        <div id='mainPanelContentDiv' style=''>
+            <uc:MainTopTab ID="mainTopTab" runat="server" />
+        </div>
+    </div>
+    </form>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            try {
+                window.onresize = MultiPageHelper.onWindowResize;
+                //                var td = $('#contentArea'); // $('td[id$=mainContentpanel]');
+                //                if (td) {
+                //                    RLMConfig.ContentAreaHeight = parseInt(td.attr('clientHeight')) - 35;
+                //                    $('#mainPanelContentDiv').css('height', (RLMConfig.ContentAreaHeight + 10) + 'px');
+                //                }
+            } catch (e) {
+                Utility.errorProcess(e);
+            }
+        });
+    </script>
+
+</body>
+</html>
