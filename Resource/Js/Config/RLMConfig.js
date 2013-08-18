@@ -1,5 +1,5 @@
 ﻿function RLMConfig() { };
-RLMConfig.WebBaseUrl = 'http://construction.com/';
+RLMConfig.WebBaseUrl = 'http://constructor.apphb.com/';
 RLMConfig.ImageUrl = RLMConfig.WebBaseUrl + 'Resource/Image/';
 RLMConfig.WebServiceBaseUrl = RLMConfig.WebBaseUrl + 'Webservice/';
 
